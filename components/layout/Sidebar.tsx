@@ -19,11 +19,11 @@ const Sidebar: FC = () => {
   return (
     <div className="max-w-[300px]">
       <Image src={logo} alt="logo" layout="responsive" />
-      <div className="flex flex-col space-y-2">
+      <div className="flex flex-col space-y-1">
         <SideBarMenuItem text="Home" Icon={HomeIcon} />
         <SideBarMenuItem text="Explore" Icon={HashtagIcon} />
         <SideBarMenuItem text="Notification" Icon={BellIcon} />
-        <SideBarMenuItem text="Messages" Icon={InboxIcon} />
+        <SideBarMenuItem text="Messages" Icon={InboxIcon} active />
         <SideBarMenuItem text="Bookmark" Icon={BookmarkIcon} />
         <SideBarMenuItem text="Lists" Icon={ClipboardIcon} />
         <SideBarMenuItem text="Profile" Icon={UserIcon} />
