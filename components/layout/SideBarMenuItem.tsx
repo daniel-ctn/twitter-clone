@@ -12,15 +12,15 @@ const SideBarMenuItem: FC<SideBarItemProps> = ({
   active = false,
 }) => {
   return (
-    <div className="flex items-center space-x-1.5 space-y-1 text-xl ml-4 pl-6 py-1 hover-menu">
+    <div className="flex items-center space-x-2 space-y-1 text-xl pl-5 py-1 hover-menu">
       <Icon
-        className={`w-7 h-7 font-medium text-gray-600 ${
-          active && '!font-bold text-blue-400'
+        className={`w-6 h-6 font-medium text-gray-600 ${
+          active && 'text-blue-400'
         }`}
       />
       <p
-        className={`text-2xl font-medium text-gray-600 pb-1.5 ${
-          active && '!font-bold text-blue-400'
+        className={`text-xl font-medium text-gray-600 pb-1 ${
+          active && 'text-blue-400'
         }`}
       >
         {text}
